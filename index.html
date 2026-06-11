@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>La Casa Prime Cabin's | Bali-Inspired Resort in Nueva Ecija</title>
+  <meta name="description" content="La Casa Prime Cabin's is a Bali-inspired resort in Bongabon, Nueva Ecija. Experience comfortable, luxurious 5-star hotel services with breathtaking views and ultimate relaxation." />
+  <meta name="keywords" content="resort, cabins, bali-inspired, nueva ecija, staycation, vacation, hotel" />
+  <meta name="author" content="La Casa Prime Cabin's" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lacasaprimecabins.vikaph.com/" />
+  <meta property="og:title" content="La Casa Prime Cabin's | Bali-Inspired Resort in Nueva Ecija" />
+  <meta property="og:description" content="Experience comfortable, luxurious 5-star hotel services with breathtaking views and ultimate relaxation in Nueva Ecija." />
+  <meta property="og:image" content="https://lacasaprimecabins.vikaph.com/images/hero.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://lacasaprimecabins.vikaph.com/" />
+  <meta property="twitter:title" content="La Casa Prime Cabin's | Bali-Inspired Resort in Nueva Ecija" />
+  <meta property="twitter:description" content="Experience comfortable, luxurious 5-star hotel services with breathtaking views and ultimate relaxation in Nueva Ecija." />
+  <meta property="twitter:image" content="https://lacasaprimecabins.vikaph.com/images/hero.jpg" />
+  
+  <!-- Tailwind CSS v3 -->
+  <script src="https://assets.vikaph.com/tailwindcss-3.4.17.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary:   '#2C5F2D',
+              secondary: '#97BC62',
+              accent:    '#FF6B35',
+              dark:      '#1A331C',
+              light:     '#F5F5DC',
+              muted:     '#6B6B6B',
+            }
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body:    ['Lato', 'sans-serif'],
+          },
+          borderRadius: {
+            card:   '0.5rem',
+            btn:    '0.25rem',
+          },
+          boxShadow: {
+            card:   '0 4px 20px rgba(0, 0, 0, 0.15)',
+            hero:   '0 8px 40px rgba(0, 0, 0, 0.2)',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Brand CSS Variables -->
+  <style>
+    :root {
+      --color-primary:   #2C5F2D;
+      --color-secondary: #97BC62;
+      --color-accent:    #FF6B35;
+      --color-dark:      #1A331C;
+      --color-light:     #F5F5DC;
+      --color-muted:     #6B6B6B;
+      
+      --font-heading: 'Playfair Display', serif;
+      --font-body:    'Lato', sans-serif;
+      
+      --radius-card: 0.5rem;
+      --radius-btn:  0.25rem;
+      --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    body { font-family: var(--font-body); }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+  </style>
+</head>
+<body class="bg-[var(--color-light)] text-[var(--color-dark)] overflow-x-hidden">
+
+  <!-- Preview Banner -->
+  <div class="fixed top-0 left-0 right-0 bg-[var(--color-dark)] text-white py-2 px-4 text-center z-50 text-sm">
+    <span class="mr-2">🚧 Preview Website</span>
+    <a href="https://www.vikaph.com/" target="_blank" class="text-[var(--color-accent)] hover:text-[var(--color-secondary)] font-semibold underline">
+      Get your website at vikaph.com
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <header class="fixed top-8 w-full z-40 bg-white/95 backdrop-blur-sm border-b border-[var(--color-muted)]/20 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <div class="font-heading text-xl font-bold text-[var(--color-primary)]">
+          La Casa Prime
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">About</a>
+          <a href="#amenities" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Amenities</a>
+          <a href="#gallery" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Gallery</a>
+          <a href="#contact" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
+        </nav>
+        <a href="#contact" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors text-sm">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden">
+      <img
+        src="images/hero.jpg"
+        alt="La Casa Prime Cabin's"
+        class="absolute inset-0 w-full h-full object-cover object-center z-0 max-w-full"
+        fetchpriority="high"
+        width="1920"
+        height="1080"
+      />
+      
+      <div class="absolute inset-0 z-10 bg-gradient-to-top from-[var(--color-dark)]/90 via-[var(--color-dark)]/70 via-[55%] to-transparent"></div>
+      <div class="absolute inset-x-0 top-0 h-40 z-10 bg-gradient-to-bottom from-[var(--color-dark)]/60 to-transparent"></div>
+      <div class="absolute inset-0 z-15 bg-black/50"></div>
+      
+      <div class="relative z-20 text-center text-white max-w-3xl mx-auto px-6 pt-16 pb-20 md:pb-0">
+        <p class="font-body text-sm uppercase tracking-widest text-white/70 mb-4">
+          Bali-Inspired Resort · Nueva Ecija · Luxury Cabins
+        </p>
+        <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight mb-4">
+          La Casa Prime
+        </h1>
+        <p class="font-heading text-3xl md:text-5xl font-semibold text-[var(--color-accent)] mb-4">
+          Cabin's
+        </p>
+        <p class="font-body text-sm text-white/60 mb-8">
+          Breathtaking Views · Fresh Air · Ultimate Relaxation
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#amenities" class="bg-[var(--color-primary)] text-white px-8 py-4 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors text-lg">
+            View Amenities
+          </a>
+          <a href="#about" class="border-2 border-white/70 text-white px-8 py-4 rounded-[var(--radius-btn)] font-heading font-semibold hover:bg-white hover:text-[var(--color-dark)] transition-colors">
+            Learn More ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="images/about.jpg"
+              alt="La Casa Prime Cabin's"
+              class="rounded-[var(--radius-card)] object-cover w-full h-80 md:h-full shadow-[var(--shadow-card)]"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)] mb-6">
+              About La Casa Prime
+            </h2>
+            <p class="font-body text-base text-[var(--color-muted)] leading-relaxed mb-4">
+              La Casa Prime Cabin's is a Bali-inspired resort nestled in the lush valley of Bongabon, Nueva Ecija. Discover comfortable, luxurious accommodations with 5-star hotel services and high-quality equipment.
+            </p>
+            <p class="font-body text-base text-[var(--color-muted)] leading-relaxed mb-6">
+              Experience breathtaking views, fresh mountain air, and ultimate relaxation. Our resort offers a tropical paradise ambiance without leaving the Philippines, making it the perfect destination for your next getaway.
+            </p>
+            <div class="flex gap-8 mt-6">
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">🌴</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Bali-Inspired</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">⭐</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">5-Star Service</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">🏞️</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Nature Views</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="bg-[var(--color-dark)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center text-white mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">
+            Our Amenities
+          </h2>
+          <p class="font-body text-lg text-white/70">
+            Luxury services and facilities
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-4xl mb-4">🏠</div>
+            <h3 class="font-heading text-xl font-semibold mb-3">Luxury Cabins</h3>
+            <p class="font-body text-sm text-white/70">Comfortable cabins for 2, 6, and 8 pax with premium amenities.</p>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-4xl mb-4">🏊</div>
+            <h3 class="font-heading text-xl font-semibold mb-3">Swimming Pool</h3>
+            <p class="font-body text-sm text-white/70">Refreshing pool with stunning views for relaxation.</p>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-4xl mb-4">🍽️</div>
+            <h3 class="font-heading text-xl font-semibold mb-3">Dining</h3>
+            <p class="font-body text-sm text-white/70">Delicious meals prepared with fresh local ingredients.</p>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-4xl mb-4">📶</div>
+            <h3 class="font-heading text-xl font-semibold mb-3">Free WiFi</h3>
+            <p class="font-body text-sm text-white/70">Stay connected with complimentary high-speed internet.</p>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-4xl mb-4">🅿️</div>
+            <h3 class="font-heading text-xl font-semibold mb-3">Parking</h3>
+            <p class="font-body text-sm text-white/70">Secure parking available for all guests.</p>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-4xl mb-4">🎋</div>
+            <h3 class="font-heading text-xl font-semibold mb-3">Bali Ambiance</h3>
+            <p class="font-body text-sm text-white/70">Authentic Bali-inspired design and atmosphere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)] mb-4">
+            Gallery
+          </h2>
+          <p class="font-body text-lg text-[var(--color-muted)]">
+            Take a look at our resort
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/01.jpg" alt="Resort view" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" width="400" height="300" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/02.jpg" alt="Cabin" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" width="400" height="300" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/03.jpg" alt="Pool" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" width="400" height="300" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/04.jpg" alt="View" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" width="400" height="300" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/05.jpg" alt="Resort" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" width="400" height="300" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/06.jpg" alt="Amenities" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" width="400" height="300" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div class="space-y-6">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)]">
+              Contact Us
+            </h2>
+            
+            <div class="flex items-center gap-3">
+              <div class="text-[var(--color-primary)] w-5 h-5">📘</div>
+              <a href="https://www.facebook.com/Lacasaprimecabins" target="_blank" rel="noopener" class="font-body text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">
+                Follow us on Facebook
+              </a>
+            </div>
+            
+            <div class="bg-[var(--color-light)] p-6 rounded-[var(--radius-card)] border border-[var(--color-muted)]/20">
+              <h3 class="font-heading text-xl font-semibold text-[var(--color-dark)] mb-4">Book Your Stay</h3>
+              <p class="font-body text-sm text-[var(--color-muted)]">
+                Contact us through Facebook to book your staycation at La Casa Prime Cabin's. Experience luxury and relaxation in our Bali-inspired resort.
+              </p>
+            </div>
+          </div>
+          
+          <div class="rounded-[var(--radius-card)] overflow-hidden shadow-[var(--shadow-card)] w-full h-80 lg:h-full bg-[var(--color-muted)]/10 flex items-center justify-center">
+            <div class="text-center p-8">
+              <div class="text-6xl mb-4">📍</div>
+              <p class="font-heading text-xl font-semibold text-[var(--color-dark)] mb-2">Visit Our Resort</p>
+              <p class="font-body text-sm text-[var(--color-muted)]">
+                Bongabon, Nueva Ecija, Philippines
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1A331C] text-white py-16 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="col-span-2 md:col-span-1">
+        <div class="font-heading text-xl font-bold text-white mb-4">
+          La Casa Prime
+        </div>
+        <p class="font-body text-sm text-white/60 mb-4">
+          Bali-inspired resort in Nueva Ecija.
+        </p>
+        <div class="flex gap-4 mt-4">
+          <a href="https://www.facebook.com/Lacasaprimecabins" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[var(--color-primary)] flex items-center justify-center transition-colors">
+            <span>📘</span>
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <div class="font-heading font-semibold text-white mb-4">Quick Links</div>
+        <a href="#about" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">About</a>
+        <a href="#amenities" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Amenities</a>
+        <a href="#gallery" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Gallery</a>
+        <a href="#contact" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Contact</a>
+      </div>
+      
+      <div>
+        <div class="font-heading font-semibold text-white mb-4">Cabins</div>
+        <p class="font-body text-sm text-white/60 mb-2">2 Pax</p>
+        <p class="font-body text-sm text-white/60 mb-2">6 Pax</p>
+        <p class="font-body text-sm text-white/60">8 Pax</p>
+      </div>
+      
+      <div>
+        <div class="font-heading font-semibold text-white mb-4">Location</div>
+        <p class="font-body text-sm text-white/60">Bongabon</p>
+        <p class="font-body text-sm text-white/60">Nueva Ecija</p>
+        <p class="font-body text-sm text-white/60">Philippines</p>
+      </div>
+    </div>
+    
+    <div class="border-t border-white/10 mt-12 pt-8 text-center">
+      <p class="font-body text-sm text-white/40">
+        © 2026 La Casa Prime Cabin's · All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Resort",
+    "name": "La Casa Prime Cabin's",
+    "image": "https://lacasaprimecabins.vikaph.com/images/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bongabon",
+      "addressRegion": "Nueva Ecija",
+      "addressCountry": "PH"
+    },
+    "url": "https://lacasaprimecabins.vikaph.com/",
+    "sameAs": [
+      "https://www.facebook.com/Lacasaprimecabins"
+    ],
+    "description": "Bali-inspired resort in Nueva Ecija offering luxury cabins, 5-star hotel services, breathtaking views, and ultimate relaxation.",
+    "priceRange": "$$"
+  }
+  </script>
+
+</body>
+</html>
